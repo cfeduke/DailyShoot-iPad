@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		67ACF8CF13EF09D6002802D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67ACF8CE13EF09D6002802D5 /* UIKit.framework */; };
+		67ACF8D113EF09D6002802D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67ACF8D013EF09D6002802D5 /* Foundation.framework */; };
+		67ACF8D313EF09D6002802D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67ACF8D213EF09D6002802D5 /* CoreGraphics.framework */; };
+		67ACF8D913EF09D6002802D5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 67ACF8D713EF09D6002802D5 /* InfoPlist.strings */; };
+		67ACF8DB13EF09D6002802D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67ACF8DA13EF09D6002802D5 /* main.m */; };
+		67ACF8DF13EF09D6002802D5 /* DailyShoot_iPadAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67ACF8DE13EF09D6002802D5 /* DailyShoot_iPadAppDelegate.m */; };
+		67ACF8E213EF09D6002802D5 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67ACF8E013EF09D6002802D5 /* MainWindow.xib */; };
+		67ACF8E513EF09D6002802D5 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67ACF8E413EF09D6002802D5 /* DetailViewController.m */; };
+		67ACF8E813EF09D6002802D5 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67ACF8E613EF09D6002802D5 /* DetailView.xib */; };
+		67ACF8EB13EF09D6002802D5 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67ACF8EA13EF09D6002802D5 /* RootViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		67ACF8CA13EF09D6002802D5 /* DailyShoot-iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DailyShoot-iPad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67ACF8CE13EF09D6002802D5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		67ACF8D013EF09D6002802D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		67ACF8D213EF09D6002802D5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		67ACF8D613EF09D6002802D5 /* DailyShoot-iPad-Info.plist */ = {isa = PBXFileReference; path = "DailyShoot-iPad-Info.plist"; sourceTree = "<group>"; };
+		67ACF8D813EF09D6002802D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		67ACF8DA13EF09D6002802D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		67ACF8DC13EF09D6002802D5 /* DailyShoot-iPad-Prefix.pch */ = {isa = PBXFileReference; path = "DailyShoot-iPad-Prefix.pch"; sourceTree = "<group>"; };
+		67ACF8DD13EF09D6002802D5 /* DailyShoot_iPadAppDelegate.h */ = {isa = PBXFileReference; path = DailyShoot_iPadAppDelegate.h; sourceTree = "<group>"; };
+		67ACF8DE13EF09D6002802D5 /* DailyShoot_iPadAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DailyShoot_iPadAppDelegate.m; sourceTree = "<group>"; };
+		67ACF8E113EF09D6002802D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		67ACF8E313EF09D6002802D5 /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		67ACF8E413EF09D6002802D5 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		67ACF8E713EF09D6002802D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailView.xib; sourceTree = "<group>"; };
+		67ACF8E913EF09D6002802D5 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		67ACF8EA13EF09D6002802D5 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67ACF8C713EF09D6002802D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67ACF8CF13EF09D6002802D5 /* UIKit.framework in Frameworks */,
+				67ACF8D113EF09D6002802D5 /* Foundation.framework in Frameworks */,
+				67ACF8D313EF09D6002802D5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67ACF8BF13EF09D6002802D5 = {
+			isa = PBXGroup;
+			children = (
+				67ACF8D413EF09D6002802D5 /* DailyShoot-iPad */,
+				67ACF8CD13EF09D6002802D5 /* Frameworks */,
+				67ACF8CB13EF09D6002802D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		67ACF8CB13EF09D6002802D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67ACF8CA13EF09D6002802D5 /* DailyShoot-iPad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67ACF8CD13EF09D6002802D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67ACF8CE13EF09D6002802D5 /* UIKit.framework */,
+				67ACF8D013EF09D6002802D5 /* Foundation.framework */,
+				67ACF8D213EF09D6002802D5 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67ACF8D413EF09D6002802D5 /* DailyShoot-iPad */ = {
+			isa = PBXGroup;
+			children = (
+				67ACF8DD13EF09D6002802D5 /* DailyShoot_iPadAppDelegate.h */,
+				67ACF8DE13EF09D6002802D5 /* DailyShoot_iPadAppDelegate.m */,
+				67ACF8E013EF09D6002802D5 /* MainWindow.xib */,
+				67ACF8E313EF09D6002802D5 /* DetailViewController.h */,
+				67ACF8E413EF09D6002802D5 /* DetailViewController.m */,
+				67ACF8E613EF09D6002802D5 /* DetailView.xib */,
+				67ACF8E913EF09D6002802D5 /* RootViewController.h */,
+				67ACF8EA13EF09D6002802D5 /* RootViewController.m */,
+				67ACF8D513EF09D6002802D5 /* Supporting Files */,
+			);
+			path = "DailyShoot-iPad";
+			sourceTree = "<group>";
+		};
+		67ACF8D513EF09D6002802D5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				67ACF8D613EF09D6002802D5 /* DailyShoot-iPad-Info.plist */,
+				67ACF8D713EF09D6002802D5 /* InfoPlist.strings */,
+				67ACF8DA13EF09D6002802D5 /* main.m */,
+				67ACF8DC13EF09D6002802D5 /* DailyShoot-iPad-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67ACF8C913EF09D6002802D5 /* DailyShoot-iPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67ACF8EE13EF09D6002802D5 /* Build configuration list for PBXNativeTarget "DailyShoot-iPad" */;
+			buildPhases = (
+				67ACF8C613EF09D6002802D5 /* Sources */,
+				67ACF8C713EF09D6002802D5 /* Frameworks */,
+				67ACF8C813EF09D6002802D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DailyShoot-iPad";
+			productName = "DailyShoot-iPad";
+			productReference = 67ACF8CA13EF09D6002802D5 /* DailyShoot-iPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		67ACF8C113EF09D6002802D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Deployment Zone";
+			};
+			buildConfigurationList = 67ACF8C413EF09D6002802D5 /* Build configuration list for PBXProject "DailyShoot-iPad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 67ACF8BF13EF09D6002802D5;
+			productRefGroup = 67ACF8CB13EF09D6002802D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67ACF8C913EF09D6002802D5 /* DailyShoot-iPad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		67ACF8C813EF09D6002802D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67ACF8D913EF09D6002802D5 /* InfoPlist.strings in Resources */,
+				67ACF8E213EF09D6002802D5 /* MainWindow.xib in Resources */,
+				67ACF8E813EF09D6002802D5 /* DetailView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67ACF8C613EF09D6002802D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67ACF8DB13EF09D6002802D5 /* main.m in Sources */,
+				67ACF8DF13EF09D6002802D5 /* DailyShoot_iPadAppDelegate.m in Sources */,
+				67ACF8E513EF09D6002802D5 /* DetailViewController.m in Sources */,
+				67ACF8EB13EF09D6002802D5 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		67ACF8D713EF09D6002802D5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67ACF8D813EF09D6002802D5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		67ACF8E013EF09D6002802D5 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67ACF8E113EF09D6002802D5 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		67ACF8E613EF09D6002802D5 /* DetailView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67ACF8E713EF09D6002802D5 /* en */,
+			);
+			name = DetailView.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		67ACF8EC13EF09D6002802D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		67ACF8ED13EF09D6002802D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67ACF8EF13EF09D6002802D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DailyShoot-iPad/DailyShoot-iPad-Prefix.pch";
+				INFOPLIST_FILE = "DailyShoot-iPad/DailyShoot-iPad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		67ACF8F013EF09D6002802D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DailyShoot-iPad/DailyShoot-iPad-Prefix.pch";
+				INFOPLIST_FILE = "DailyShoot-iPad/DailyShoot-iPad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		67ACF8C413EF09D6002802D5 /* Build configuration list for PBXProject "DailyShoot-iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67ACF8EC13EF09D6002802D5 /* Debug */,
+				67ACF8ED13EF09D6002802D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67ACF8EE13EF09D6002802D5 /* Build configuration list for PBXNativeTarget "DailyShoot-iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67ACF8EF13EF09D6002802D5 /* Debug */,
+				67ACF8F013EF09D6002802D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 67ACF8C113EF09D6002802D5 /* Project object */;
+}
