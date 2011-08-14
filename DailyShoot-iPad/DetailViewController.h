@@ -14,6 +14,6 @@
 
 @property (nonatomic, retain) id detailItem;
 
-@property (nonatomic, retain) IBOutlet UILabel *detailDescriptionLabel;
+@property (nonatomic, retain) IBOutlet UIWebView *detailContainer;
 
 @end

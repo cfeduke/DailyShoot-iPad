@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Assignments.h"
 
 @class DetailViewController;
 
 @interface RootViewController : UITableViewController
 
 @property (nonatomic, retain) IBOutlet DetailViewController *detailViewController;
-
+@property (nonatomic,retain) IBOutlet Assignments *assignments;
 @end

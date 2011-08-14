@@ -19,7 +19,7 @@
 
 @synthesize toolbar = _toolbar;
 @synthesize detailItem = _detailItem;
-@synthesize detailDescriptionLabel = _detailDescriptionLabel;
+@synthesize detailContainer = _detailContainer;
 @synthesize popoverController = _myPopoverController;
 
 #pragma mark - Managing the detail item
@@ -44,9 +44,13 @@
 
 - (void)configureView
 {
-    // Update the user interface for the detail item.
+    NSString *url = [NSString stringWithFormat:@"http://dailyshoot.com/assignments/%@", self.detailItem];
+    [self.detailContainer loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
+}
 
-    self.detailDescriptionLabel.text = [self.detailItem description];
+-(void)viewDidLoad {
+    [super viewDidLoad];
+    [self configureView];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -77,7 +81,7 @@
 
 - (void)splitViewController:(UISplitViewController *)svc willHideViewController:(UIViewController *)aViewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController: (UIPopoverController *)pc
 {
-    barButtonItem.title = @"Events";
+    barButtonItem.title = @"Assignments";
     NSMutableArray *items = [[self.toolbar items] mutableCopy];
     [items insertObject:barButtonItem atIndex:0];
     [self.toolbar setItems:items animated:YES];
@@ -127,7 +131,7 @@
     [_myPopoverController release];
     [_toolbar release];
     [_detailItem release];
-    [_detailDescriptionLabel release];
+    [_detailContainer release];
     [super dealloc];
 }
 

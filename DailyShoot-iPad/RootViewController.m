@@ -13,14 +13,15 @@
 @implementation RootViewController
 		
 @synthesize detailViewController;
+@synthesize assignments;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.clearsSelectionOnViewWillAppear = NO;
-    self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
+//    self.clearsSelectionOnViewWillAppear = NO;
+//    self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
+    self.title = @"Assignments";
 }
-
 		
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -55,8 +56,7 @@
 		
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
-    		
+    return [self.assignments count];
 }
 
 		
@@ -67,11 +67,15 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
-
+    cell.textLabel.text = [[self.assignments assignmentAtIndex:indexPath.row] stringValue];
+    
     // Configure the cell.
-    		
     return cell;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    self.detailViewController.detailItem = [self.assignments assignmentAtIndex:indexPath.row];
 }
 
 /*
@@ -104,19 +108,6 @@
 {
 }
 */
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Navigation logic may go here -- for example, create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     NSManagedObject *selectedObject = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
-}
 
 - (void)didReceiveMemoryWarning
 {
